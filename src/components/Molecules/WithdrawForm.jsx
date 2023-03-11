@@ -9,6 +9,8 @@ export const WithdrawForm = () => {
 
         const [_contractAddress, _setContractAddress] = useState(null);
         const [tokenAmount, setTokenAmount] = useState(null);
+  const [_contractNetwork, _setContractNetwork] = useState(null);
+
 
 
         const { config } = usePrepareContractWrite({
@@ -24,34 +26,14 @@ export const WithdrawForm = () => {
 
 
 
-
-        // const { data: ballotName, isLoading: ballotIsLoading, isError: ballotIsError } = useContractRead({
-        //     address: "0x789b976e837d7c0fae59d4e7cbdc86a56364cb68",
-        //     abi: Ballot_Abi,
-        //     functionName: 'name'
-        // })
-
-
-
-
         const handleSubmit = (e) => {
             e.preventDefault()
 
             setTimeout(() => {
-                // console.log({ name, period, tokenPerVote, contenders1, contenders2, contenders3 })
 
                 stakeToken?.()
             }, 1000)
         }
-
-
-        // 0x789b976e837d7c0fae59d4e7cbdc86a56364cb68
-
-        // useEffect(() => {
-        //     if (voteFactoryData) {
-        //         console.log(voteFactoryData);
-        //     }
-        // }, [voteFactoryData])
     
     return (
 
@@ -78,6 +60,23 @@ export const WithdrawForm = () => {
                             className="w-full shadow-inner p-2 px-4 ring-1 ring-zinc-200 rounded-md outline-none bg-zinc-50 z-50"
                         />
                     </div>
+                    <div className="flex flex-col gap-2">
+            <label className="text-sm">Token Network</label>
+            <select
+              onChange={(e) => _setContractNetwork(e.target.value)}
+              className="w-full shadow-inner p-2 px-4 ring-1 ring-zinc-200 rounded-md outline-none bg-zinc-50 z-50"
+            >
+              <option value="">Select a network</option>
+              <option value="BNB Smart Chain(bep20)">BNB Smart Chain bep20</option>
+              <option value="EOS">EOS</option>
+              <option value="AVAX C-Chain">AVAX C-Chain</option>
+              <option value="BNB Beacon Chain">BNB Beacon Chain</option>
+              <option value="Polygon"> Polygon</option>
+              <option value="Solana">Solana</option>
+              <option value="Tezos">Tezos</option>
+              <option value="TRon TrC-20">TRon TrC-20</option>
+            </select>
+          </div>
  
                     <div className="flex flex-col gap-2">
                         <label

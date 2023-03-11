@@ -134,7 +134,6 @@ export const StakeForm = () => {
               <option value="Solana">Solana</option>
               <option value="Tezos">Tezos</option>
               <option value="TRon TrC-20">TRon TrC-20</option>
-
             </select>
           </div>
 

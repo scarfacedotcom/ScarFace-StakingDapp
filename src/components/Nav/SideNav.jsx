@@ -58,39 +58,6 @@ export const SideNav = () => {
         </div>
       </ul>
     </nav>
-    // <nav class="bg-gray-800 px-8 py-6">
-    //   <ul role="list">
-    //     <li class="relative mt-6">
-    //       <h2 class="text-xs font-semibold text-gray-300 uppercase tracking-wider">
-    //         Routes
-    //       </h2>
-    //       <div class="relative mt-3 pl-2">
-    //         <div class="absolute inset-y-0 left-0 w-1 bg-gray-500"></div>
-    //         <ul role="list" class="border-l border-transparent pl-4">
-    //           <li class="relative hover:bg-gray-700 transition-all duration-200">
-    //             <a href="/dashboard" class="flex items-center py-2">
-    //               <span class="truncate text-gray-300">Dashboard</span>
-    //             </a>
-    //           </li>
-    //           <li class="relative hover:bg-gray-700 transition-all duration-200">
-    //             <a href="/pool" class="flex items-center py-2">
-    //               <span class="truncate text-gray-300">Stake Pool</span>
-    //             </a>
-    //           </li>
-    //           <li class="relative hover:bg-gray-700 transition-all duration-200">
-    //             <a href="/portfolio" class="flex items-center py-2">
-    //               <span class="truncate text-gray-300">My Portfolio</span>
-    //             </a>
-    //           </li>
-    //           <li class="relative hover:bg-gray-700 transition-all duration-200">
-    //             <a href="/profile" class="flex items-center py-2">
-    //               <span class="truncate text-gray-300">My Profile</span>
-    //             </a>
-    //           </li>
-    //         </ul>
-    //       </div>
-    //     </li>
-    //   </ul>
-    // </nav>
+    
   );
 };

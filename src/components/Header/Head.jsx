@@ -27,12 +27,12 @@ const Head = () => {
                     <nav className="hidden md:block">
                         <ul className="flex items-center gap-8">
                             <li>
-                                <a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/">API</a>
+                                <a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/">Home</a>
                             </li>
                             <li>
-                                <a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/#">Documentation</a>
+                                <a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/#">About</a>
                             </li>
-                            <li><a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/#">Support</a></li>
+                            <li><a className="text-sm leading-5 text-zinc-600 transition hover:text-zinc-900" href="/#">Contact</a></li>
                         </ul>
                     </nav>
 
@@ -53,8 +53,6 @@ const Head = () => {
 
                     <div className="flex gap-4">
                         <MyConnectButton />
-                        {/* <ConnectKitButton /> */}
-                        {/* <ConnectButton /> */}
                     </div>
 
 
