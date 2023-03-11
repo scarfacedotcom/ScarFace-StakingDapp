@@ -61,6 +61,15 @@ function HomePage() {
             Join Scar Face Staking Platform today and start earning rewards for
             supporting the blockchain networks of the future.
           </p>
+
+          <div class="flex justify-center items-center">
+            <a
+              href="/"
+              class="inline-block bg-zinc-900 text-white font-bold py-2 px-4 rounded-md hover:bg-gray-700 transition duration-200"
+            >
+              Click Here
+            </a>
+          </div>
         </div>
       </main>
     </div>
